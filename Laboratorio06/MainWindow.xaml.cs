@@ -137,7 +137,7 @@ namespace Laboratorio06
                 command.Parameters.AddWithValue("@Nombre", txtBoxNombre.Text);
                 command.Parameters.AddWithValue("@direccion", txtBoxDireccion.Text);
                 command.Parameters.AddWithValue("@cargo", txtBoxCargo.Text);
-                command.Parameters.AddWithValue("@FechaContratacion", txtBoxContratacion.Text);
+                command.Parameters.AddWithValue("@FechaContratacion",  DateTime.Parse(txtBoxContratacion.Text));
                 command.Parameters.AddWithValue("@codPostal", txtBoxCodPostal.Text);
                 command.Parameters.AddWithValue("@ciudad", txtBoxCiudad.Text);
                 command.Parameters.AddWithValue("@pais", txtBoxPais.Text);
